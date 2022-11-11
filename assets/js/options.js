@@ -71,7 +71,7 @@ class Butler {
     const objects = e;
     const keys = Object.keys(objects)
 
-    if (date - new Date(objects[keys[keys.length - 1]].date) > 300000) this.postData()
+    if (date - new Date(objects[keys[keys.length - 2]].date) > 300000) this.postData()
   }
 
   postData = () => {

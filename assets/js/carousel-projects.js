@@ -13,10 +13,11 @@ class ProCarousel extends Carousel {
     this.name.innerHTML = Links[0].name;
 
     this.webPage = document.querySelector('#webpage')
-    this.webPage.innerHTML = `<a href="${Links[0].webPage} " target="blank" class="FillLink"></a>WebPage`;
+    this.webPage.innerHTML = `<a href="${Links[0].webPage} " target="blank" class="fillLink"></a>WebPage`;
+    console.log(Links[0].webPage);
 
     this.gitHub = document.querySelector('#github')
-    this.gitHub.innerHTML = `<a href="${Links[0].gitHub} " target="blank" class="FillLink"></a>GitHub`;
+    this.gitHub.innerHTML = `<a href="${Links[0].gitHub} " target="blank" class="fillLink"></a>GitHub`;
   }
 
   _gotoNth(n) {

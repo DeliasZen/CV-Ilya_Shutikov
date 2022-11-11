@@ -176,7 +176,7 @@ const Links = [
     'name': 'Grid-template'
   },
   {
-    'wbPage': 'https://deliaszen.github.io/Slider-JS-only/',
+    'webPage': 'https://deliaszen.github.io/Slider-JS-only/',
     'gitHub': 'https://github.com/DeliasZen/Slider-JS-only',
     'name': 'Slider-JS-only'
   },
