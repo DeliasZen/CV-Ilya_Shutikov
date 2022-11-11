@@ -1,0 +1,33 @@
+@use "../../presets/" as *;
+
+.experience {
+  grid-area: ex;
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+
+  .task {
+    font-style: italic;
+  }
+
+  &__item {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    @media screen and (max-width: $lg){
+      padding-left: 0rem;
+    }  
+  }
+  
+  @media screen and (min-width: $lg + .2){
+    padding-top: 0rem;
+
+    &::before {
+      content: '';
+      background-color: $color-accent;
+      width: 2px;
+      height: 260px;
+      position: absolute;
+      top: 60px;
+    }
+  }  
+}

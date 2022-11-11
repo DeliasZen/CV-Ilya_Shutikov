@@ -1,0 +1,49 @@
+@use "../../presets/" as *;
+
+.skills {
+  grid-area: sk;
+  text-align: center;
+
+  .skill {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem .3rem 0;
+
+    &__item {
+      background-color: $color-gray;
+      padding: 0.6rem;
+      border-radius: 9px;
+    }
+
+    &__link {
+      text-align: center;
+      background-color: $color-light;
+      cursor: pointer;
+      border-radius: 9px;
+      padding: .6rem;
+      box-shadow: 1px 2px 5px #0000004d;
+      transition: .3s;
+  
+      &:hover {
+        background-color: $color-accent;
+        color: $color-light;
+      }
+    }
+
+    @media screen and (min-width: $lg + .2){
+      padding-left: 1.2rem;
+      &::before {
+        content: '';
+        background-color: $color-accent;
+        width: 2px;
+        height: 260px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@use "../../presets/" as *;
+
+.projects {
+  grid-area: pr;
+  @media screen and (max-width: $lg){
+    padding-top: 1.5rem;
+  }
+
+  .lng-projects{
+    padding-bottom: 1rem;
+  }
+
+  .description {
+    @media screen and (max-width: $sm){
+      display: none;
+    }
+    .lng-description {
+      padding-top: .8rem;
+    }
+
+    &__text {
+      background-color: $color-gray;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      height: 6rem;
+      // text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .control {
+    font-size: 5rem;
+      i {
+    margin-top: 4rem;
+    }
+    @media screen and (max-width: $sm){
+      font-size: 2.5rem;
+      i {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+
+    @media screen and (max-width: $md){
+      flex-direction: column;
+    }
+  }
+
+  &__carousel {
+    min-width: 26rem;
+    height: 15rem;
+    @media screen and (max-width: $sm){
+      min-width: 100%;
+      height: 12rem;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    padding: 0 1rem;
+    
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1.25rem;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    .button__link {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      background-color: $color-light;
+      cursor: pointer;
+      border-radius: 9px;
+      padding: 0.8rem 1.2rem;
+      box-shadow: 1px 2px 5px #0000004d;
+      transition: .3s;
+
+      &:nth-of-type(3) {
+        grid-column: 1/span 2;
+    }
+
+      &:hover {
+        background-color: $color-accent;
+        color: $color-light;
+      }
+    }
+  }
+}

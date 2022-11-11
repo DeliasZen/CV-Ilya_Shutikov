@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilya Shutikov</title>
+
+  <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+  <link rel="stylesheet" href="libs/fontawesome-free/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__content container">
+      <h1>CV</h1>
+      <div class="language-block">
+        <p class="lng-language">Language:</p>
+        <select class="select-lang" name="lang" id="lang">
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+        <!-- <div class="language-block__item selected">EN</div>
+        <div class="language-block__item">RU</div> -->
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__content container">
+      <section class="photo">
+        <img class="photo__img" src="assets/img/AV.jpg" alt="photo">
+        <h2 class="lng-name">Ilya Shutikov</h2>
+        <h3>Front-End Developer</h3>
+      </section>
+
+      <section class="about">
+        <p class="lng-about">I'm junior front-end developer! I completed the course of WEB and Javascript
+          for Front-end Development with distinction. Now I' keeping to improve
+          my skills in web-development, following new technologies and actively trying to use them in my work.
+          I use my free time to learn English and to explore new technologies and libraries necessary for the work by
+          front-end developer, also I started to study React.
+          I have qualities: stress resistance, punctuality, multitasking, educability.
+          At my previous job I improved my communication skills including communication with foreign agents.</p>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__desc lng-contacts">My contacts:</h2>
+        <a href="mailto:IlyaShutikov1@gmail.com" class="contacts__item" target="blink">IlyaShutikov1@gmail.com<i
+            class="fa-sharp fa-solid fa-envelope"></i></a>
+        <a href="tel:+375(25) 720-66-33" class="contacts__item" target="blink">+375(25) 720-66-33<i
+            class="fa-solid fa-mobile"></i></a>
+        <a href="https://www.google.com/maps/place/Minsk" class="contacts__item" target="blink">Minsk,
+          Belarus/Relocate<i class="fa-solid fa-location-dot"></i></a>
+        <a target="blink" href="https://www.linkedin.com/in/ilya-shutikov/" class="contacts__item"
+          target="blink">linkedin.com/in/ilya-shutikov<i class="fa-brands fa-linkedin contacts__icon"></i></a>
+        <a href="https://github.com/DeliasZen" class="contacts__item" target="blink">github.com/DeliasZen<i
+            class="fa-brands fa-github"></i></a>
+
+      </section>
+
+      <div class="line1"></div>
+
+      <section class="projects">
+        <h2 class="lng-projects">My Projects:</h2>
+        <div class="projects__wrap">
+          <ul id="projects" class="carousel projects__carousel">
+            <li style="background-image: url(assets/img/projects/Pokedex.JPG);" class="slide active"><a
+                href="https://pokedex-ang.web.app/" target="_blank" class="fillLink"></a>
+            </li>
+            <li style="background-image: url(assets/img/projects/Tinyone.JPG);" class="slide"><a
+                href="https://deliaszen.github.io/Tinyone/" target="_blank" class="fillLink"></a></li>
+            <li style="background-image: url(assets/img/projects/Crud.JPG);" class="slide"><a
+                href="https://ng-firebase-deploy-c23c6.web.app/" target="_blank" class="fillLink"></a>
+            </li>
+            <li style="background-image: url(assets/img/projects/Grid-template.JPG);" class="slide" target="_blank"><a
+                href="https://deliaszen.github.io/grid-template/" class="fillLink"></a></li>
+            <li style="background-image: url(assets/img/projects/Slider-JS.JPG);" class="slide" target="_blank"><a
+                href="https://deliaszen.github.io/Slider-JS-only/" class="fillLink"></a></li>
+
+            <div class="control control--left projects__control"><i class="fas fa-angle-left"></i></div>
+            <div class="control control--right projects__control"><i class="fas fa-angle-right"></i></div>
+          </ul>
+
+          <div class="projects__menu">
+            <h3 id="project-name">Pokedex</h3>
+            <h4 class="lng-help">Click to look at:</h4>
+            <div class="projects__buttons">
+              <div id="webpage" class="button__link">WebPage</div>
+              <div id="github" class="button__link">GitHub</div>
+              <div class="button__link"><a href="https://github.com/DeliasZen?tab=repositories" class="fillLink"></a>
+                View
+                all projects</div>
+            </div>
+          </div>
+        </div>
+        <div class="description">
+          <h4 class="lng-description">Description:</h4>
+          <p class="description__text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt non culpa
+            neque iusto quis hic voluptatem eaque minima quidem sit, commodi illo id. At mollitia consequatur
+            consectetur
+            tempora maxime perspiciatis!</p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2 class="lng-skills">Skills:</h2>
+
+        <ul class="skill">
+          <a href="https://www.efset.org/cert/j1sCo4" target="_blank" class="skill__link">
+            <p>English: B1</p>
+          </a>
+          <li class="skill__item">html</li>
+          <li class="skill__item">css</li>
+          <li class="skill__item">JavaScript</li>
+          <li class="skill__item">TypeScript</li>
+          <li class="skill__item">Angular</li>
+          <li class="skill__item">RxJS</li>
+          <li class="skill__item">Scss</li>
+          <li class="skill__item">Gulp</li>
+          <li class="skill__item">Sass</li>
+          <li class="skill__item">Webpack</li>
+          <li class="skill__item">Git</li>
+          <li class="skill__item">VSC</li>
+          <li class="skill__item">Bootstrap</li>
+          <li class="skill__item">BEM</li>
+          <li class="skill__item">SOLID</li>
+          <a href="https://www.codewars.com/users/DeliasZen" target="_blank"><img
+              src="https://www.codewars.com/users/DeliasZen/badges/small" style="width : 90%" alt="codewars"></a>
+        </ul>
+
+      </section>
+
+      <div class="line2">
+        <div class="line2"></div>
+      </div>
+
+      <section class="education">
+        <h2 class="lng-education">Education:</h2>
+        <div class="courses">
+
+          <ul id="certificates" class="carousel courses__carousel">
+            <li style="background-image: url(assets/img/certificates/GB.JPG);" class="slide active"><a
+                href="https://gb.ru/certificates/1380836.en" target="_blank" class="fillLink"></a>
+            </li>
+            <li style="background-image: url(assets/img/certificates/Skill_up.JPG);" class="slide"><a
+                href="assets/img/certificates/Skill_up.JPG" target="_blank" class="fillLink"></a></li>
+            <li style="background-image: url(assets/img/certificates/EF_set.JPG);" class="slide"><a
+                href="https://www.efset.org/cert/j1sCo4" target="_blank" class="fillLink"></a>
+            </li>
+
+            <div class="control control--left courses__control"><i class="fas fa-angle-left"></i></div>
+            <div class="control control--right courses__control"><i class="fas fa-angle-right"></i></div>
+          </ul>
+
+          <div class="courses__completed">
+            <h3>Front-End Developer</h3>
+            <h4>SkillUp</h4>
+            <p class="date">10/2021 - 02/2022</p>
+          </div>
+
+        </div>
+
+        <div class="other">
+          <div class="other__item">
+            <h3><i class="fa-solid fa-check"></i><span class="speciality">Economics and Management</span></h3>
+            <h4 class="institution">Belarusian State Agrarian Technical University</h4>
+            <p class="date">09/2012 - 06/2016</p>
+          </div>
+
+          <div class="other__item">
+            <h3> <i class="fa-solid fa-check"></i><span class="speciality">Business activities</span></h3>
+            <h4 class="institution">Molodechno trade-economic college</h4>
+            <p class="date">09/2010 - 06/2012</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="experience">
+        <h2 class="lng-experience">Work Experience:</h2>
+        <div class="experience__item">
+          <h3><i class="fa-solid fa-check"></i><span class="position">Investment and trust managment specialist</span>
+          </h3>
+          <h4 class="company">Alfa-Bank (Belarus)</h4>
+          <p class="date">03/2020 - 11/2021</p>
+          <p class="tasks">Trading platform administration. Communication with contrakting agent. Analysis
+            of
+            trading data and
+            trading activity of clients. Control client internal reporting. Performance analysis trading platform.
+            Making
+            trade transactions with securities at the request of clients.</p>
+        </div>
+        <div class="experience__item">
+          <h3><i class="fa-solid fa-check"></i><span class="position">Account Manager</span></h3>
+          <h4 class="company">ProCredit</h4>
+          <p class="date">05/2019 - 04/2020</p>
+          <p class="tasks">Manager on work with clients. Consultation clients on the company's products.
+            Preparation of credit
+            documentation. Report preparation.</p>
+        </div>
+        <div class="experience__item">
+          <h3><i class="fa-solid fa-check"></i><span class="position">Specialist in international settlements</span>
+          </h3>
+          <h4 class="company">VTB</h4>
+          <p class="date">02/2018 - 02/2019</p>
+          <p class="tasks">Specialist in international settlements. Generating and sending messages and
+            payment on client and
+            bank's own payments in foreign exchanges in SWIFT format.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="target"></div>
+
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+
+</html>

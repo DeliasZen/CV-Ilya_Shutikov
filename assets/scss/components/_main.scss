@@ -1,0 +1,46 @@
+@use "../presets" as *;
+
+.main {
+  background-color: $color-white;
+  padding-top: 2rem;
+
+  &__content{
+  display: grid; //
+  // grid-template-areas: "ph ab ab ab co" "l1 l1 l1 l1 l1" "pr pr pr pr sk" "l2 l2 l2 l2 l2" "ed ed ex ex ex";
+  grid-template-areas: "ph ab ab co" "l1 l1 l1 l1" "pr pr pr sk" "l2 l2 l2 l2" "ed ed ex ex";
+
+  grid-row-gap: 1rem;
+
+  @media screen and (max-width: $lg){
+    grid-template-areas: "ph co" "l1 l1" "sk ab"  "pr pr" "l2 l2" "ed ed" "ex ex";
+  }  
+  @media screen and (max-width: $sm){
+    grid-template-areas: "ph" "ab" "co" "l1" "sk " "pr" "l2" "ed" "ex";
+    font-size: 14px;
+  }
+
+  .line1 {
+    grid-area: l1;
+    margin: 0 1rem;
+    background-color: #1a1a1a;
+    height: 4px;
+    border-radius: 9px;
+  }
+
+  .line2 {
+    grid-area: l2;
+    margin: 1rem;
+    background-color: #1a1a1a;
+    height: 4px;
+    border-radius: 9px;
+
+    &::after {
+      top: 2;
+      margin: 1.2rem;
+      background-color: #df1717;
+      height: 4px;
+      border-radius: 9px;
+    }
+    }
+  }
+}

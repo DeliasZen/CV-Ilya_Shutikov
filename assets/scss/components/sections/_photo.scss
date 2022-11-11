@@ -1,0 +1,18 @@
+@use "../../presets/" as *;
+
+.photo {
+  grid-area: ph;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  @media screen and (min-width: $lg){
+    padding-right: 2rem;
+  }
+  
+  &__img {
+    width: 8.125rem;
+    border-radius: 9px;
+    background-color: $color-accent;
+    padding: 2px;
+  }
+}

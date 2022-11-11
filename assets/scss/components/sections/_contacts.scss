@@ -1,0 +1,24 @@
+@use "../../presets/" as *;
+
+.contacts {
+  grid-area: co;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  gap: 1em;
+
+  i {
+    padding-left: 0.3rem;
+    width: 25px;
+  }
+
+  &__item {
+    transition: .3s;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

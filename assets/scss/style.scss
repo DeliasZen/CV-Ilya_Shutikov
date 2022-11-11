@@ -1,0 +1,26 @@
+@use "../../node_modules/normalize.css/normalize.css";
+// @use "../../libs/fontawesome-free-6.2.0-web/css/all.css";
+
+@use "common/typography";
+@use "common/classes";
+
+@use "components/header";
+@use "components/main";
+@use "components/sections/photo";
+@use "components/sections/about";
+@use "components/sections/contacts";
+@use "components/sections/projects";
+@use "components/sections/skills";
+@use "components/sections/education";
+@use "components/sections/experience";
+
+
+@use "components/add/target";
+
+
+
+// @use "components/header/header";
+
+// @use "components/sections/top/top";
+
+// @use "components/footer/footer"

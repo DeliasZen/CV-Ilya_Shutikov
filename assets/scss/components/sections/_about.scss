@@ -1,0 +1,40 @@
+@use "../../presets/" as *;
+
+.about {
+  grid-area: ab;
+
+  position: relative;
+  background-color: $color-gray;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: auto;
+  font-size: 1.2rem;
+  // margin-right: -1rem;
+
+  @media screen and (max-width: $xl){
+    font-size: 1rem;
+    padding: .6rem;
+  }
+
+  @media screen and (min-width: $lg + .2){
+    &::after {
+      content: '';
+      background-color: $color-accent;
+      width: 2px;
+      height: 130px;
+      position: absolute;
+      top: 15px;
+      left: -15px;
+      }
+
+    &::before {
+      content: '';
+      background-color: $color-accent;
+      width: 2px;
+      height: 130px;
+      position: absolute;
+      top: 15px;
+      right: -15px;
+    }
+  }
+}

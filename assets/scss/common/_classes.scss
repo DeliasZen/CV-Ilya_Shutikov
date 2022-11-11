@@ -1,0 +1,69 @@
+@use "../../scss/presets/" as *;
+
+.container {
+  max-width: $ul;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 9px;
+  box-shadow: 1px 2px 5px #0000004d;
+
+}
+
+.active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.control {
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  cursor: pointer;
+  transition: all .3s;
+  color: $color-primary;
+  opacity: 0.5;
+  &:hover {
+    color: $color-accent;
+    opacity: 1;
+  }
+
+  i {
+    padding: 1rem;
+    background-color: $color-light;
+    border-radius: 9px;
+  }
+  &--left {
+    left: 0;    
+  }
+
+  &--right {
+    right: 0;
+  }
+}
+
+.fillLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.date {
+  color: $color-gray;
+  font-style: italic;
+}

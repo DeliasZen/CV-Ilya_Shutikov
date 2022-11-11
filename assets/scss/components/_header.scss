@@ -1,0 +1,21 @@
+@use "../presets" as *;
+
+.header {
+  background-color: $color-primary;
+  color: $color-light;
+
+  &__content {
+    h1 {
+      margin: 0;
+      padding-right: 1rem;
+    }
+    display: flex;
+    justify-content: space-between;
+  
+    .language-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
