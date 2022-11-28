@@ -42,8 +42,8 @@ const Languages = {
     },
 
     'about': {
-      'en': `I'm junior front-end developer! I completed the course of WEB and Javascript for Front-end Development with distinction. Now I' keeping to improve my skills in web-development, following new technologies and actively trying to use them in my work. I use my free time to learn English and to explore new technologies and libraries necessary for the work by front-end developer, also I started to study React. I have qualities: stress resistance, punctuality, multitasking, educability. At my previous job I improved my communication skills including communication with foreign agents.`,
-      'ru': `Я junior front-end developer! Я закончил курсы WEB and Javascript for Front-end Development с отличием. На данный момент я продолжаю совершенствовать свои навыки в веб-разработке, слежу за новыми технологиями и активно пытаюсь использовать их в своей работе. Свободное время я провожу за изучением английского языка и изучением новых технологий и библиотек, необходимых для работы фронт-енд разработчиков, также я начал изучать React. Обладаю качествами: стрессоустойчивость, пунктуальность, многозадачность, обучаемость, работа в команде. На предыдущем месте работы я улучшил свои коммуникативные навыки, в том числе общение с иностранными агентами.`
+      'en': `I'm front-end developer(Angular, React)! I completed the course of WEB and Javascript for Front-end Development with distinction. Now I' keeping to improve my skills in web-development, following new technologies and actively trying to use them in my work. I use my free time to learn English and to explore new technologies and libraries necessary for the work by front-end developer. I have qualities: stress resistance, punctuality, multitasking, educability. At my previous job I improved my communication skills including communication with foreign agents.`,
+      'ru': `Я front-end developer(Angular, React)! Я закончил курсы WEB and Javascript for Front-end Development с отличием. На данный момент я продолжаю совершенствовать свои навыки в веб-разработке, слежу за новыми технологиями и активно пытаюсь использовать их в своей работе. Свободное время я провожу за изучением английского языка и изучением новых технологий и библиотек, необходимых для работы фронт-енд разработчиков. Обладаю качествами: стрессоустойчивость, пунктуальность, многозадачность, обучаемость, работа в команде. На предыдущем месте работы я улучшил свои коммуникативные навыки, в том числе общение с иностранными агентами.`
     },
 
     'name': {
@@ -67,6 +67,10 @@ const Languages = {
     {
       'en': `The app demonstrates my angular proficiency in form construction and work with remote database using RxJs library. Records can be interacted with by adding/deleting and modificating of data. The bootstrap library was used when writing the application`,
       'ru': `Приложение демонстрирует навыки владения angular в области построения форм и работы с удаленной базой данных посредством использования библиотеки RxJs. С записями можно взаимодействовать путем добавления/удаления и изменения данных. При написании приложения использовался bootstrap.`
+    },
+    {
+      'en': `A simple application that was built using the React library, It uses the basic concepts and methods of developing React applications. ..//Redux, Typescript, tailwind, axios.`,
+      'ru': `Простое приложение, созданное при помощи библиотеки React, Здесь используются основные концепции и методы разработки приложений на React. ..//Redux, Typescript, tailwind, axios.`
     },
     {
       'en': `One of my first projects where I demonstrate responsive design skills and work with flexbox layout and grid layout. The project fully adapted for pc/tablet/mobile.`,
@@ -169,6 +173,11 @@ const Links = [
     'webPage': 'https://ng-firebase-deploy-c23c6.web.app/',
     'gitHub': 'https://github.com/DeliasZen/CRUD',
     'name': 'CRUD'
+  },
+  {
+    'webPage': 'https://deliaszen.github.io/React-shop-app/',
+    'gitHub': 'https://github.com/DeliasZen/React-shop-app',
+    'name': 'React-Shop'
   },
   {
     'webPage': 'https://deliaszen.github.io/grid-template/',

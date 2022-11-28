@@ -55,27 +55,32 @@ class Language {
 
 
 class Butler {
-  path = 'https://cv-ilya-default-rtdb.europe-west1.firebasedatabase.app/guests.json'
+  path = 'https://cv-ilya-default-rtdb.europe-west1.firebasedatabase.app/guests'
 
   newGuest = {
-    date: new Date,
-    device: navigator.platform
+    date: new Date().toLocaleString("en-US", { hour: 'numeric', minute: 'numeric', second: 'numeric' }),
+    device: navigator.platform,
+    userAgent: navigator.userAgent
   }
 
-  getData(url) {
-    fetch(url).then(res => res.json()).then(res => this.check(res))
-  }
+  dateNow = new Date().toLocaleString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })
 
-  check(e) {
-    let date = new Date;
-    const objects = e;
-    const keys = Object.keys(objects)
+  //
+  // getData(url) {
+  //   fetch(url).then(res => res.json()).then(res => this.getData(res))
+  // }
 
-    if (date - new Date(objects[keys[keys.length - 2]].date) > 300000) this.postData()
-  }
+  // check(e) {
+  //   let date = new Date;
+  //   const objects = e;
+  //   const keys = Object.keys(objects)
+  //   console.log(objects);
+  //   if (date - new Date(objects[keys[keys.length - 2]].date) > 300000) this.postData()
+  // }
+  //
 
   postData = () => {
-    return fetch(this.path, {
+    return fetch(`${this.path}/${this.dateNow}.json`, {
       method: 'POST',
       body: JSON.stringify(this.newGuest),
       headers: {
@@ -85,7 +90,8 @@ class Butler {
   }
 
   init() {
-    this.getData(this.path)
+    // this.getData(`${this.path}/${this.dateNow}.json`)
+    this.postData(this.path)
   }
 }
 
