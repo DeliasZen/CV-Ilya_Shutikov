@@ -61,6 +61,10 @@ const Languages = {
       'ru': `Приложение, которое создано при помощи фреймворка ангуляр. В приложении реализован парсинг данных из стороннего api, работа с формами(reactive forms), работа с удаленной базой данных (Вы можете создать собственного покемона с периодичность в 5 минут) и guard services (вы можете авторизоваться для изменении информации во вкладке "about").`
     },
     {
+      'en': `The app provides: authentication by login and password / login via google, each user can view only information available to him, Guard services to access to the main components. ..//Angular Material, RxJs, Firebase`,
+      'ru': `В приложении реализованы: аутентификация по логину и паролю/вход через google, каждый пользователь может просматривать только доступную для него информацию, Guard сервисы для доступа к основным компонентам. ..//Angular Material, RxJs, Firebase`
+    },
+    {
       'en': `a project I created during the course. Here implemented adaptive design for various devices(pc/tablet/mobile), jQuery is used for slider operation.`,
       'ru': `Проект, который был создан во время моего обучения. в проекте реализована адаптивная верстка для различных устройств(pc/tablet/mobile), для работы слайдера используется jQuery.`
     },
@@ -163,6 +167,11 @@ const Links = [
     'webPage': 'https://pokedex-ang.web.app/',
     'gitHub': 'https://github.com/DeliasZen/Pokedex',
     'name': 'Pokedex'
+  },
+  {
+    'webPage': 'https://livi-c9073.web.app/',
+    'gitHub': 'https://livi-c9073.web.app/',
+    'name': 'Sign In Form'
   },
   {
     'webPage': 'https://deliaszen.github.io/Tinyone/',
